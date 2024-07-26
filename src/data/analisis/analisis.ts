@@ -3,14 +3,14 @@ interface Preguntas {
   respuesta: string;
 }
 
-interface Proyecto {
+export interface Analisis {
   nombre: string;
   desc: string;
   imagenURL: string;
   preguntas: Array<Preguntas>;
 }
 
-export const Proyectos: Array<Proyecto> = [
+export const Proyectos: Array<Analisis> = [
   {
     nombre: "Notas de estudiantes",
     desc: "asdsadas",
