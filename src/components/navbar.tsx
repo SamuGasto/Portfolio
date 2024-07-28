@@ -10,7 +10,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { Logo } from "@/components/icons";
+import { Logo } from "./icons";
 
 export const Navbar = () => {
   return (
@@ -35,6 +35,7 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
           <Logo />
+
           {siteConfig.navItemsRight.map((item) => (
             <NavbarItem key={item.href}>
               <Link
