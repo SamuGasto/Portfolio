@@ -11,8 +11,8 @@ export const siteConfig = {
   ],
   navItemsRight: [
     {
-      label: "Contacto",
-      href: "/contact",
+      label: "Sobre mi",
+      href: "/about",
     },
   ],
   navMenuItems: [
@@ -21,8 +21,8 @@ export const siteConfig = {
       href: "/projects",
     },
     {
-      label: "Contacto",
-      href: "/contact",
+      label: "Sobre mi",
+      href: "/about",
     },
   ],
   links: {

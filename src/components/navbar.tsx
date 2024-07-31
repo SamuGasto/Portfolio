@@ -11,14 +11,18 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo } from "./icons";
+import { Button } from "@nextui-org/button";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <NextUINavbar
       maxWidth="full"
       className="shadow-md dark:border-b dark:border-white"
     >
-      <NavbarContent className="ml-6 basis-1/5 sm:basis-full" justify="center">
+      <NavbarContent className="ml-40 basis-1/5 sm:basis-full" justify="center">
         <NavbarBrand className="w-full gap-10 max-w-fit items-center">
           {siteConfig.navItemsLeft.map((item) => (
             <NavbarItem key={item.href}>
@@ -55,6 +59,16 @@ export const Navbar = () => {
 
       <NavbarContent justify="end">
         <ThemeSwitch />
+        <Button
+          color="primary"
+          radius="sm"
+          className="light light:bg-blue-500 dark:bg-white shadow-md light:shadow-blue-300 dark:shadow-blue-100"
+          onPress={() => navigate("/contact")}
+        >
+          <h1 className="light light:text-white dark:text-black font-PlaywriteDKUloopet">
+            Contacto
+          </h1>
+        </Button>
       </NavbarContent>
     </NextUINavbar>
   );

@@ -9,9 +9,9 @@ export default function NoEncontrado() {
         No se encontró el proyecto
       </h1>
       <Button
-        color="default"
+        color="primary"
         size="lg"
-        variant="faded"
+        variant="ghost"
         onPress={() => navigate("/projects")}
       >
         Volver a Proyectos
