@@ -22,7 +22,10 @@ export const Navbar = () => {
       maxWidth="full"
       className="shadow-md dark:border-b dark:border-white"
     >
-      <NavbarContent className="ml-40 basis-1/5 sm:basis-full" justify="center">
+      <NavbarContent
+        className="ml-0 sm:ml-10 md:ml-20 lg:ml-40 basis-1/5 sm:basis-full"
+        justify="center"
+      >
         <NavbarBrand className="w-full gap-10 max-w-fit items-center">
           {siteConfig.navItemsLeft.map((item) => (
             <NavbarItem key={item.href}>
@@ -62,7 +65,7 @@ export const Navbar = () => {
         <Button
           color="primary"
           radius="sm"
-          className="light light:bg-blue-500 dark:bg-white shadow-md light:shadow-blue-300 dark:shadow-blue-100"
+          className="light light:bg-blue-500 dark:bg-white shadow-md"
           onPress={() => navigate("/contact")}
         >
           <h1 className="light light:text-white dark:text-black font-PlaywriteDKUloopet">

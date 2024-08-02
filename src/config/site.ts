@@ -1,6 +1,15 @@
 export type SiteConfig = typeof siteConfig;
 
-export const siteConfig = {
+interface siteConfig {
+  name: string;
+  description: string;
+  navItemsLeft: Array<{ label: string; href: string }>;
+  navItemsRight: Array<{ label: string; href: string }>;
+  navMenuItems: Array<{ label: string; href: string }>;
+  links: { github: string; linkedin: string };
+}
+
+export const siteConfig: siteConfig = {
   name: "Vite + NextUI",
   description: "Make beautiful websites regardless of your design experience.",
   navItemsLeft: [
@@ -26,10 +35,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui-docs-v2.vercel.app",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/SamuGasto",
+    linkedin: "https://www.linkedin.com/in/samuelramirezzuniga/",
   },
 };

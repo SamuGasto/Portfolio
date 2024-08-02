@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import IndexPage from "@/pages/index";
 import ProjectsPage from "@/pages/projects";
-import NoPage from "./pages/NoPage";
+import NoPage from "./pages/no-page";
 import ContactPage from "./pages/contact";
 import AboutPage from "./pages/about";
 

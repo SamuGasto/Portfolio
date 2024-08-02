@@ -2,8 +2,8 @@ import { Analisis, esAnalisis } from "@/data/analisis/analisis";
 import { Aplicacion } from "@/data/apps/apps";
 import { motion } from "framer-motion";
 import { subtitle, title } from "../primitives";
-import SeccionPreguntas from "./seccionPreguntas";
-import SeccionTecnologias from "./seccionTecnologias";
+import SeccionPreguntas from "./seccion-preguntas";
+import SeccionTecnologias from "./seccion-tecnologias";
 
 interface PropType {
   info: Analisis | Aplicacion;
@@ -13,7 +13,7 @@ export default function VistaProyecto(props: PropType) {
   const { info } = props;
   return (
     <motion.div
-      className="flex flex-col text-center justify-center gap-10 py-8 md:py-10"
+      className="flex flex-col text-center justify-center gap-10 py-4 md:py-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
     >

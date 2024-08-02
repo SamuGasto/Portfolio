@@ -8,7 +8,7 @@ import Tarjeta from "./tarjetas";
 export default function Proyectos() {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 w-full"
+      className="flex flex-col items-center justify-center gap-4 py-2 md:py-4 w-full"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
     >

@@ -43,13 +43,13 @@ const ExpoLogo: React.FC<IconSvgProps> = () => (
 );
 
 export const Iconos = [
-  () => <Image radius="none" width={width + 50} src={zustandIcon} />,
   () => <Image radius="none" width={width} src={cssIcon} />,
-  () => <ExpoLogo />,
   () => <Image radius="none" width={width} src={htmlIcon} />,
   () => <Image radius="none" width={width} src={javascriptIcon} />,
+  () => <Image radius="none" width={width} src={sqlIcon} />,
   () => <Image radius="none" width={width} src={mongoDBIcon} />,
   () => <Image radius="none" width={width} src={nodejsIcon} />,
   () => <Image radius="none" width={width} src={reactIcon} />,
-  () => <Image radius="none" width={width} src={sqlIcon} />,
+  () => <Image radius="none" width={width + 50} src={zustandIcon} />,
+  () => <ExpoLogo />,
 ];

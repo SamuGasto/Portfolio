@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Iconos } from "../../data/tecnologias/icons";
+import { Iconos } from "../../images/tecnologias/icons";
 import { Card, CardBody } from "@nextui-org/card";
 
 export default function Icons() {

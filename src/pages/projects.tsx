@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/default";
-import Proyectos from "@/components/projectos/listaProjectos";
+import Proyectos from "@/components/projectos/lista-projectos";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import proyectosApp, {
@@ -7,8 +7,8 @@ import proyectosApp, {
   ProyectoAppNoEncontrado,
 } from "@/data/apps/apps";
 import proyectosAdd, { Analisis } from "@/data/analisis/analisis";
-import VistaProyecto from "@/components/projectos/vistaProyecto";
-import NoEncontrado from "@/components/projectos/noEncontrado";
+import VistaProyecto from "@/components/projectos/vista-proyecto";
+import NoEncontrado from "@/components/projectos/no-encontrado";
 
 export default function ProjectsPage() {
   let { id } = useParams();

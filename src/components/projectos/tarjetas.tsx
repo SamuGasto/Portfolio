@@ -16,10 +16,10 @@ export default function Tarjeta(props: PropType) {
   return (
     <motion.div
       className="flex w-full"
-      initial={{ opacity: 0, x: -10 }}
+      initial={{ opacity: 0, y: -10 }}
       animate={{
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: { delay: index > 0 ? index / 10 : 0 },
       }}
       whileHover={{ scale: 1.01 }}
@@ -33,7 +33,7 @@ export default function Tarjeta(props: PropType) {
           <h1 className="text-base italic">{element.resumen}</h1>
         </CardHeader>
         <CardBody>
-          <Image radius="md" height={300} src={element.imagenURL}></Image>
+          <Image radius="md" width={300} src={element.imagenURL}></Image>
         </CardBody>
         <CardFooter className="flex flex-col w-full">
           <Link href={`/projects/${tipo}-${element.id}`}>
