@@ -1,13 +1,21 @@
+import ADD1 from "./proyectos/ADD-1.json";
+
 export interface Preguntas {
   pregunta: string;
   respuesta: string;
+}
+
+export interface Atributo {
+  nombre: string;
+  descripcion: string;
+  valor: Array<string>;
 }
 
 export interface Analisis {
   id: number;
   nombre: string;
   resumen: string;
-  desc: string;
+  atributos: Array<Atributo>;
   imagenURL: string;
   preguntas: Array<Preguntas>;
 }
@@ -20,45 +28,10 @@ export const ProyectoAddNoEncontrado: Analisis = {
   id: 0,
   nombre: "Proyecto no encontrado",
   resumen: "",
-  desc: "",
+  atributos: [],
   imagenURL: "",
   preguntas: [],
 };
 
-export const Proyectos: Array<Analisis> = [
-  {
-    id: 0,
-    nombre: "Notas de estudiantes",
-    resumen: "Breve resumen",
-    desc: "asdsadas",
-    imagenURL: "",
-    preguntas: [
-      {
-        pregunta: "¿Cómo?",
-        respuesta: "Porque sí",
-      },
-      {
-        pregunta: "¿Cuando?",
-        respuesta: "Ayer",
-      },
-    ],
-  },
-  {
-    id: 1,
-    nombre: "Segundo proyecto",
-    resumen: "Breve resumen",
-    desc: "asdsadas",
-    imagenURL: "",
-    preguntas: [
-      {
-        pregunta: "¿Cómo?",
-        respuesta: "Porque sí",
-      },
-      {
-        pregunta: "¿Cuando?",
-        respuesta: "Ayer",
-      },
-    ],
-  },
-];
+export const Proyectos: Array<Analisis> = [ADD1];
 export default Proyectos;
