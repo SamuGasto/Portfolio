@@ -10,6 +10,7 @@ export interface Aplicacion {
 }
 
 export const esAplicacion = (x: any): x is Aplicacion => {
+  x;
   return true;
 };
 
