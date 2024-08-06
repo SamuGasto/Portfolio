@@ -21,6 +21,7 @@ export interface Analisis {
 }
 
 export const esAnalisis = (x: any): x is Analisis => {
+  x;
   return true;
 };
 
