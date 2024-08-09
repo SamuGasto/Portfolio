@@ -28,7 +28,7 @@ export default function Tarjeta(props: PropType) {
         className="flex flex-col text-center justify-center w-full"
         shadow="sm"
       >
-        <CardHeader className="flex flex-col">
+        <CardHeader className="flex flex-col gap-6">
           <h1 className="text-xl font-semibold">{element.nombre}</h1>
           <h1 className="text-base italic">{element.resumen}</h1>
         </CardHeader>

@@ -4,6 +4,7 @@ import ProyectosAnalisis, { Analisis } from "@/data/analisis/analisis";
 import ProyectosApp, { Aplicacion } from "@/data/apps/apps";
 import { motion } from "framer-motion";
 import Tarjeta from "./tarjetas";
+import { TimeEnd } from "../icons";
 
 export default function Proyectos() {
   return (
@@ -36,14 +37,29 @@ export default function Proyectos() {
             title="Aplicaciones"
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
           >
-            {ProyectosApp.map((element: Aplicacion, index: number) => (
-              <Tarjeta
-                key={`app-${element.id}`}
-                tipo="app"
-                element={element}
-                index={index}
-              />
-            ))}
+            {Object.keys(ProyectosApp).length !== 0 ? (
+              ProyectosApp.map((element: Aplicacion, index: number) => (
+                <Tarjeta
+                  key={`app-${element.id}`}
+                  tipo="app"
+                  element={element}
+                  index={index}
+                />
+              ))
+            ) : (
+              <div className="flex flex-col w-full justify-center text-center items-center gap-5">
+                <TimeEnd size={80} />
+                <h1
+                  className={
+                    title() +
+                    " " +
+                    "light light:text-zinc-400 dark:text-zinc-700"
+                  }
+                >
+                  No hay proyectos todavía...
+                </h1>
+              </div>
+            )}
           </Tab>
         </Tabs>
       </div>

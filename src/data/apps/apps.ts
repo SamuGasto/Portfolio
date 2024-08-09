@@ -1,4 +1,4 @@
-import CorrelacionImagen from "./images/P1/correlacion.png";
+//import APP1 from "./proyectos/APP-1.json";
 
 export interface Aplicacion {
   id: number;
@@ -23,22 +23,5 @@ export const ProyectoAppNoEncontrado: Aplicacion = {
   tecnologias: [],
 };
 
-export const Proyectos: Array<Aplicacion> = [
-  {
-    id: 0,
-    nombre: "Yo estudio",
-    resumen: "Breve resumen",
-    desc: "asdsadas",
-    imagenURL: CorrelacionImagen,
-    tecnologias: [],
-  },
-  {
-    id: 1,
-    nombre: "No estudio ;-;",
-    resumen: "Breve resumen",
-    desc: "asdsadas",
-    imagenURL: "",
-    tecnologias: [],
-  },
-];
+export const Proyectos: Array<Aplicacion> = [];
 export default Proyectos;
