@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import { subtitle, title } from "../primitives";
 import SeccionPreguntas from "./seccion-preguntas";
 import SeccionTecnologias from "./seccion-tecnologias";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableColumn,
+  TableHeader,
+  TableRow,
+} from "@nextui-org/table";
 
 interface PropType {
   info: Analisis | Aplicacion;
@@ -34,13 +42,27 @@ export default function VistaProyecto(props: PropType) {
     if (esAnalisis(info)) {
       return (
         <div>
-          {info.atributos.map((element: Atributo, index: number) => (
-            <div key={index}>
-              <h1>{element.nombre}</h1>
-              <h1>{element.descripcion}</h1>
-              <h1>{element.valor}</h1>
-            </div>
-          ))}
+          <h1 className={title()}>Atributos del conjunto de datos</h1>
+          <Table>
+            <TableHeader>
+              <TableColumn>Columna</TableColumn>
+              <TableColumn>Descripción</TableColumn>
+              <TableColumn>Valores</TableColumn>
+            </TableHeader>
+            <TableBody>
+              {info.atributos.map((element: Atributo, index: number) => (
+                <TableRow key={index} className="p-6">
+                  <TableCell>{element.nombre}</TableCell>
+                  <TableCell>{element.descripcion}</TableCell>
+                  <TableCell>
+                    {element.valor.map((element) => {
+                      return element + " | ";
+                    })}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
       );
     } else {
