@@ -1,4 +1,4 @@
-import ADD1 from "./proyectos/ADD-1.json";
+import { ADD1 } from "./proyectos/ADD-1";
 
 export interface Preguntas {
   pregunta: string;
@@ -16,7 +16,8 @@ export interface Analisis {
   nombre: string;
   resumen: string;
   atributos: Array<Atributo>;
-  imagenURL: string;
+  imagenPrincipalURL: string;
+  imagenesExtra: Array<string>;
   preguntas: Array<Preguntas>;
 }
 
@@ -30,7 +31,8 @@ export const ProyectoAddNoEncontrado: Analisis = {
   nombre: "Proyecto no encontrado",
   resumen: "",
   atributos: [],
-  imagenURL: "",
+  imagenPrincipalURL: "",
+  imagenesExtra: [],
   preguntas: [],
 };
 

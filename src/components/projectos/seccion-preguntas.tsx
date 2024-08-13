@@ -1,4 +1,4 @@
-import { Analisis, Preguntas } from "@/data/analisis/analisis";
+import { Analisis, Preguntas } from "@/data/proyectos/analisis/analisis";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 
 interface PropType {

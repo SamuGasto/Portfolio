@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import proyectosApp, {
   Aplicacion,
   ProyectoAppNoEncontrado,
-} from "@/data/apps/apps";
-import proyectosAdd, { Analisis } from "@/data/analisis/analisis";
+} from "@/data/proyectos/apps/apps";
+import proyectosAdd, { Analisis } from "@/data/proyectos/analisis/analisis";
 import VistaProyecto from "@/components/projectos/vista-proyecto";
 import NoEncontrado from "@/components/projectos/no-encontrado";
 

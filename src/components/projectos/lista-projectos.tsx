@@ -1,10 +1,8 @@
 import { title } from "@/components/primitives";
 import { Tab, Tabs } from "@nextui-org/tabs";
-import ProyectosAnalisis, { Analisis } from "@/data/analisis/analisis";
-import ProyectosApp, { Aplicacion } from "@/data/apps/apps";
 import { motion } from "framer-motion";
 import Tarjeta from "./tarjetas";
-import { TimeEnd } from "../icons";
+import { ListaProyectos } from "../../data/proyectos/config";
 
 export default function Proyectos() {
   return (
@@ -18,49 +16,22 @@ export default function Proyectos() {
       </div>
       <div className="flex w-full flex-col">
         <Tabs className="flex w-full flex-col" variant="underlined">
-          <Tab
-            key="analisis"
-            title="Analisis de Datos"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
-          >
-            {ProyectosAnalisis.map((element: Analisis, index: number) => (
-              <Tarjeta
-                key={`add-${element.id}`}
-                tipo="add"
-                element={element}
-                index={index}
-              />
-            ))}
-          </Tab>
-          <Tab
-            key="apps"
-            title="Aplicaciones"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
-          >
-            {Object.keys(ProyectosApp).length !== 0 ? (
-              ProyectosApp.map((element: Aplicacion, index: number) => (
+          {ListaProyectos.map((element) => (
+            <Tab
+              key={element.titulo}
+              title={element.titulo}
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
+            >
+              {element.proyectos.map((proyecto, index) => (
                 <Tarjeta
-                  key={`app-${element.id}`}
-                  tipo="app"
-                  element={element}
+                  key={`${proyecto.nombre}-${proyecto.id}`}
+                  tipo={element.tipo}
+                  element={proyecto}
                   index={index}
                 />
-              ))
-            ) : (
-              <div className="flex flex-col w-full justify-center text-center items-center gap-5">
-                <TimeEnd size={80} />
-                <h1
-                  className={
-                    title() +
-                    " " +
-                    "light light:text-zinc-400 dark:text-zinc-700"
-                  }
-                >
-                  No hay proyectos todavía...
-                </h1>
-              </div>
-            )}
-          </Tab>
+              ))}
+            </Tab>
+          ))}
         </Tabs>
       </div>
     </motion.div>

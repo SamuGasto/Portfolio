@@ -1,5 +1,5 @@
-import { Analisis } from "@/data/analisis/analisis";
-import { Aplicacion } from "@/data/apps/apps";
+import { Analisis } from "@/data/proyectos/analisis/analisis";
+import { Aplicacion } from "@/data/proyectos/apps/apps";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";

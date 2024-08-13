@@ -1,6 +1,10 @@
-import { Analisis, Atributo, esAnalisis } from "@/data/analisis/analisis";
-import { Aplicacion } from "@/data/apps/apps";
-import { motion } from "framer-motion";
+import {
+  Analisis,
+  Atributo,
+  esAnalisis,
+} from "@/data/proyectos/analisis/analisis";
+import { Aplicacion } from "@/data/proyectos/apps/apps";
+import { AnimatePresence, motion } from "framer-motion";
 import { subtitle, title } from "../primitives";
 import SeccionPreguntas from "./seccion-preguntas";
 import SeccionTecnologias from "./seccion-tecnologias";
@@ -12,6 +16,9 @@ import {
   TableHeader,
   TableRow,
 } from "@nextui-org/table";
+import { ReactNode } from "react";
+import { Image } from "@nextui-org/image";
+import CarruselImagenes from "./carrusel-imagenes";
 
 interface PropType {
   info: Analisis | Aplicacion;
@@ -20,7 +27,7 @@ interface PropType {
 export default function VistaProyecto(props: PropType) {
   const { info } = props;
 
-  function Titulo() {
+  const Titulo = (): ReactNode => {
     if (esAnalisis(info)) {
       return (
         <div>
@@ -36,33 +43,40 @@ export default function VistaProyecto(props: PropType) {
         </div>
       );
     }
-  }
+  };
 
-  function Descripcion() {
+  const Descripcion = (): ReactNode => {
     if (esAnalisis(info)) {
       return (
-        <div>
-          <h1 className={title()}>Atributos del conjunto de datos</h1>
-          <Table>
-            <TableHeader>
-              <TableColumn>Columna</TableColumn>
-              <TableColumn>Descripción</TableColumn>
-              <TableColumn>Valores</TableColumn>
-            </TableHeader>
-            <TableBody>
-              {info.atributos.map((element: Atributo, index: number) => (
-                <TableRow key={index} className="p-6">
-                  <TableCell>{element.nombre}</TableCell>
-                  <TableCell>{element.descripcion}</TableCell>
-                  <TableCell>
-                    {element.valor.map((element) => {
-                      return element + " | ";
-                    })}
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+        <div className="flex flex-col gap-8 items-center">
+          <h1 className={title({ size: "sm" })}>
+            Atributos del conjunto de datos
+          </h1>
+          <div className="flex w-full sm:w-11/12 md:w-4/5  lg:w-3/4">
+            <Table>
+              <TableHeader>
+                <TableColumn>Columna</TableColumn>
+                <TableColumn>Descripción</TableColumn>
+                <TableColumn>Valores</TableColumn>
+              </TableHeader>
+              <TableBody>
+                {info.atributos.map((element, index) => (
+                  <TableRow key={index} className="p-6">
+                    <TableCell>{element.nombre}</TableCell>
+                    <TableCell>{element.descripcion}</TableCell>
+                    <TableCell>
+                      {element.valor.map((element, index) => {
+                        if (index > 0) {
+                          return ", " + element;
+                        }
+                        return element;
+                      })}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
         </div>
       );
     } else {
@@ -72,7 +86,7 @@ export default function VistaProyecto(props: PropType) {
         </div>
       );
     }
-  }
+  };
 
   return (
     <motion.div
@@ -83,6 +97,8 @@ export default function VistaProyecto(props: PropType) {
       {Titulo()}
       <hr />
       {Descripcion()}
+      <hr />
+      <CarruselImagenes info={info} />
       <hr />
       <section className="w-5/6 md:w-4/6 lg:w-3/6 self-center">
         {esAnalisis(info) ? (
