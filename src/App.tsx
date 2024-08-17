@@ -6,6 +6,7 @@ import NoPage from "./pages/no-page";
 import ContactPage from "./pages/contact";
 import AboutPage from "./pages/about";
 
+
 function App() {
   return (
     <Routes>
