@@ -135,37 +135,38 @@ export const ADD1 = {
     {
       pregunta:
         "¿Los estudiantes que reciben tutorías tienden a tener mejores clasificaciones de notas?",
-      respuesta: "",
+      respuesta:
+        "Los estudiantes que reciben tutorias si lográn obtener mejores calificaciones, de hecho el promedio aumenta un 15% en comparación.",
     },
     {
       pregunta:
         "¿Cómo impacta el número de ausencias en el rendimiento académico de los estudiantes?",
-      respuesta: "",
+      respuesta:
+        "El estudio muestra como los estudiantes con mayor número de ausencias tienen en promedio las peores calificaciones, de hecho en el gráfico 'Relación entre ausencias y calificaciones' podemos notar como los estudiantes con mejores calificaciones son los mismos que tienen menor número de ausencias.",
     },
     {
       pregunta:
         "¿Qué impacto tiene el nivel de apoyo parental en la clasificación de las notas de los estudiantes?",
-      respuesta: "",
+      respuesta:
+        "Posee un notable aporte al rendimiento del estudiante, de hecho en comparación a un estudiante que no recibe ninguna clase de apoyo parental, el promedio del que si recibe un alto apoyo es de un 46% mejor.",
     },
     {
       pregunta:
         "¿La participación en actividades extracurriculares está asociada con un mejor rendimiento académico?",
-      respuesta: "",
+      respuesta:
+        "Levemente, de hecho las calificaciones en promedio de estudiantes que si participan de alguna actividad extracurricular son un 9% mejor.",
     },
     {
       pregunta:
         "¿Qué tipo de actividades extracurriculares (deportes, música, voluntariado) tienen una mayor influencia en el rendimiento académico?",
-      respuesta: "",
-    },
-    {
-      pregunta:
-        "¿Cómo varía el rendimiento académico entre estudiantes de diferentes subgrupos demográficos (por ejemplo, estudiantes asiáticos con padres con educación universitaria frente a estudiantes caucásicos con padres sin educación superior)?",
-      respuesta: "",
+      respuesta:
+        "En el gráfico 'Rendimiento de estudiantes según participación en actividades extracurriculares' podemos notar como el participar de Música y Voluntarido es la mejor combinación, obteniendo en promedio 22% mejor calificaciones que los que no participan de ninguna.",
     },
     {
       pregunta:
         "¿Hay patrones específicos en los estudiantes que obtienen una calificación 'A' comparados con aquellos que obtienen una calificación 'F'?",
-      respuesta: "",
+      respuesta:
+        "De todo el análisis se puede concluir que los factores que más afectan el rendimiento académico es la ausencia a clases, el estudio semanal y apoyo parental.",
     },
   ],
   "creditos:": [

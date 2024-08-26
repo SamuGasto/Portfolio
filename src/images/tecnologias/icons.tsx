@@ -20,5 +20,17 @@ const width = 40;
 
 export const Iconos = [
   () => <Image radius="none" width={width} src={css} />,
-  () => <Image radius="none" width={width} src={css} />
+  () => <Image radius="none" width={width} src={html5} />,
+  () => <Image radius="none" width={width} src={javascript} />,
+  () => <Image radius="none" width={width} src={react} />,
+  () => <Image radius="none" width={width} src={nodejs} />,
+  () => <Image radius="none" width={width} src={nextjs} />,
+  () => <Image radius="none" width={width} src={expo} />,
+  () => <Image radius="none" width={width} src={mongodb} />,
+  () => <Image radius="none" width={width} src={sqlite} />,
+  () => <Image radius="none" width={width} src={python} />,
+  () => <Image radius="none" width={width} src={csharp} />,
+  () => <Image radius="none" width={width} src={unity} />,
+  () => <Image radius="none" width={width} src={ue5} />,
+  () => <Image radius="none" width={width} src={blender} />
 ];
