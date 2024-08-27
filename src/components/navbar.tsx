@@ -26,7 +26,7 @@ export const Navbar = () => {
         className="ml-0 sm:ml-10 md:ml-20 lg:ml-40 basis-1/5 sm:basis-full"
         justify="center"
       >
-        <NavbarBrand className="w-full gap-10 max-w-fit items-center">
+        <NavbarBrand className="w-full gap-3 sm:gap-4 md:gap-6 lg:gap-10 max-w-fit items-center">
           {siteConfig.navItemsLeft.map((item) => (
             <NavbarItem key={item.href}>
               <Link

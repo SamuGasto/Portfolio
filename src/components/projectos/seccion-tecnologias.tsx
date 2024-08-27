@@ -1,4 +1,4 @@
-import { Aplicacion } from "@/data/apps/apps";
+import { Aplicacion } from "@/data/proyectos/apps/apps";
 
 interface PropType {
   info: Aplicacion;

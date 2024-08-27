@@ -16,12 +16,11 @@ export default function Experiencia() {
           <span className="font-semibold">Samuel Ramírez Zúñiga</span>{" "}
           <span>, estudiante de octavo semestre de</span>{" "}
           <span className="font-semibold">Ingeniería Civil en Computación</span>{" "}
-          en la Universidad de O’Higgins. Mi trayectoria académica y profesional
-          refleja mi pasión por la{" "}
-          <span className="font-semibold">tecnología y la programación</span>.
-          Además de mis estudios, he adquirido experiencia práctica como
-          ayudante docente y asistente DTI en mi universidad, fortaleciendo mis
-          habilidades técnicas y de soporte.
+          en la Universidad de O’Higgins. Mi formación académica, complementada
+          con mi estudio autodidacta, ha fortalecido mi capacidad para enfrentar
+          desafíos técnicos con un enfoque meticuloso y analítico. Estoy
+          altamente comprometido con el desarrollo de soluciones tecnológicas
+          innovadoras que cumplan con los más altos estándares de calidad.
         </p>
       </div>
       <Link href="/about">Saber más</Link>

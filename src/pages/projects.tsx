@@ -1,12 +1,12 @@
 import DefaultLayout from "@/layouts/default";
-import Proyectos from "@/components/projectos/lista-projectos";
+import Proyectos from "@/components/projectos/lista-proyectos";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import proyectosApp, {
   Aplicacion,
   ProyectoAppNoEncontrado,
-} from "@/data/apps/apps";
-import proyectosAdd, { Analisis } from "@/data/analisis/analisis";
+} from "@/data/proyectos/apps/apps";
+import proyectosAdd, { Analisis } from "@/data/proyectos/analisis/analisis";
 import VistaProyecto from "@/components/projectos/vista-proyecto";
 import NoEncontrado from "@/components/projectos/no-encontrado";
 

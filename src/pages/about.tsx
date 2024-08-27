@@ -29,10 +29,13 @@ export default function AboutPage() {
                 transition: { duration: 0.4, delay: 0.1 },
               }}
             >
-              Hola, soy Samuel Ramírez Zúñiga, un estudiante de Ingeniería Civil
-              en Computación en la Universidad de O’Higgins. A lo largo de mi
-              carrera, he podido desarrollar un fuerte compromiso con el
-              aprendizaje y el trabajo en equipo.
+              Soy Samuel Ramírez Zúñiga, estudiante de Ingeniería Civil en
+              Computación, especializado en el desarrollo de software y ciencia
+              de datos. A lo largo de mi formación académica y experiencia
+              profesional, he adquirido un conjunto sólido de habilidades
+              técnicas en lenguajes y tecnologías clave como JavaScript,
+              TypeScript, React, MongoDB y Python, que utilizo para crear
+              soluciones innovadoras y eficientes.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
@@ -42,12 +45,14 @@ export default function AboutPage() {
                 transition: { duration: 0.4, delay: 0.6 },
               }}
             >
-              Mis competencias técnicas abarcan una variedad de lenguajes y
-              herramientas, incluyendo el desarrollo de aplicaciones
-              web/moviles/escritorio, así como habilidades avanzadas en soporte
-              técnico. En mi experiencia como asistente DTI, brindé soporte
-              técnico en la universidad, manejando desde la actualización de
-              software hasta la reparación de impresoras.
+              Mi experiencia como Asistente DTI en la Universidad de O’Higgins
+              me ha permitido aplicar y expandir mis conocimientos técnicos en
+              un entorno real, manejando desde la optimización de
+              infraestructuras tecnológicas hasta la implementación de
+              soluciones de software a medida. Además, mi trabajo como ayudante
+              docente en programación Python ha fortalecido mi capacidad para
+              desglosar problemas complejos y enseñar conceptos técnicos con
+              claridad.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
@@ -57,11 +62,12 @@ export default function AboutPage() {
                 transition: { duration: 0.4, delay: 1.1 },
               }}
             >
-              Mi enfoque se centra en el autoaprendizaje, la curiosidad y la
-              creatividad, siempre buscando nuevas formas de aplicar mis
-              conocimientos para resolver problemas y crear soluciones. Además,
-              disfruto de leer, cocinar, enseñar y practicar música, actividades
-              que me ayudan a seguir desarrollando mi creatividad.
+              Estoy particularmente interesado en el desarrollo de aplicaciones
+              que integren grandes volúmenes de datos, utilizando técnicas de
+              ciencia de datos para extraer insights valiosos y mejorar la toma
+              de decisiones. Mi enfoque se basa en la combinación de un
+              pensamiento analítico riguroso con una capacidad para innovar y
+              adaptarme rápidamente a nuevas tecnologías.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
@@ -71,12 +77,10 @@ export default function AboutPage() {
                 transition: { duration: 0.4, delay: 1.6 },
               }}
             >
-              Estoy buscando oportunidades para aplicar mis habilidades y
-              conocimientos en un entorno profesional, donde pueda contribuir al
-              éxito de proyectos innovadores y continuar creciendo en mi
-              carrera. Si estás buscando a alguien con una fuerte ética de
-              trabajo, habilidades técnicas sólidas y una pasión por la
-              tecnología, no dudes en contactarme.
+              Mi objetivo es continuar desarrollándome como profesional en el
+              campo del desarrollo de software y la ciencia de datos,
+              contribuyendo a proyectos que requieran un enfoque técnico
+              avanzado y un compromiso con la excelencia.
             </motion.p>
           </div>
         </motion.div>
