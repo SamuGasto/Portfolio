@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import Icons from "./icons";
 import RedesSociales from "../contactar/redes-sociales";
 import { Button } from "@nextui-org/button";
-import Curriculum from "../../curriculum/Curriculum-General.pdf";
+import Curriculum from "../../curriculum/Currículum-General.pdf";
 import Name from "./name";
 
 export default function Presentacion() {
   return (
     <motion.div
-      className="flex flex-col text-center justify-center items-center gap-1"
+      className="flex flex-col w-full text-center justify-center items-center gap-1"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
     >
@@ -34,7 +34,7 @@ export default function Presentacion() {
         </motion.div>
       </div>
 
-      <section className="mt-8">
+      <section className="flex flex-col w-full mt-8 gap-4">
         <p className={subtitle()}>Conocimientos en:</p>
         <Icons />
       </section>

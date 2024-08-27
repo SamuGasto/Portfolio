@@ -17,8 +17,16 @@ export interface Analisis {
   resumen: string;
   atributos: Array<Atributo>;
   imagenPrincipalURL: string;
+  textoImagen: string;
   imagenesExtra: Array<string>;
   preguntas: Array<Preguntas>;
+  creditos: Array<{
+    Dataset: {
+      Autor: string;
+      Licence: string;
+      Citation: string;
+    };
+  }>;
 }
 
 export const esAnalisis = (x: any): x is Analisis => {
@@ -32,8 +40,10 @@ export const ProyectoAddNoEncontrado: Analisis = {
   resumen: "",
   atributos: [],
   imagenPrincipalURL: "",
+  textoImagen: "",
   imagenesExtra: [],
   preguntas: [],
+  creditos: [{ Dataset: { Autor: "", Licence: "", Citation: "" } }],
 };
 
 export const Proyectos: Array<Analisis> = [ADD1];

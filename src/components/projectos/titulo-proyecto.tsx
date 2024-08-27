@@ -9,7 +9,19 @@ function Titulo(info: Analisis | Aplicacion) {
         <h1 className="font-PlaywriteDKUloopet text-6xl font-semibold">
           {info.nombre}
         </h1>
-        <h1 className={subtitle()}>{info.resumen}</h1>
+        <h1 className="text-lg text-left">{info.resumen}</h1>
+        {info.creditos.map((element) => {
+          return (
+            <div>
+              <h1 className="font-PlaywriteDKUloopet text-lg">
+                Créditos del Dataset
+              </h1>
+              <h1>{element.Dataset.Autor}</h1>
+              <h1>{element.Dataset.Licence}</h1>
+              <h1>{element.Dataset.Citation}</h1>
+            </div>
+          );
+        })}
       </div>
     );
   } else {

@@ -7,7 +7,7 @@ export const ADD1 = {
   id: 0,
   nombre: "Notas de estudiantes",
   resumen:
-    "Este estudio tiene como objetivo comprender que factores influyen en el rendimiendo académico de jóvenes entre 15 y 18 años",
+    "Este estudio analiza los factores que influyen en el rendimiento académico de jóvenes entre 15 y 18 años, considerando una amplia variedad de variables que incluyen edad, género, etnicidad, nivel educativo de los padres, tiempo de estudio semanal, asistencia a clases, participación en tutorías, apoyo parental y participación en actividades extracurriculares. A través de un enfoque estadístico detallado, se busca identificar patrones y correlaciones que permitan comprender mejor cómo estos factores impactan las calificaciones de los estudiantes. Los hallazgos de este análisis ofrecen insights valiosos para educadores y formuladores de políticas en la búsqueda de estrategias que optimicen el rendimiento académico.",
   atributos: [
     {
       nombre: "StudentID",
@@ -100,13 +100,50 @@ export const ADD1 = {
     },
   ],
   imagenPrincipalURL: PanelPrincipal,
+  textoImagen: "Dashboard y gráficos creados usando PowerBI",
   imagenesExtra: [detalles_a, detalles_b, detalles_c],
   preguntas: [
     {
       pregunta:
-        "¿Existe una relación entre la edad de los estudiantes y su rendimiento académico?",
+        "¿Cómo impacta el número de ausencias en el rendimiento académico de los estudiantes?",
       respuesta:
-        "La relación entre la edad de los estudiantes y su rendimiento académico es muy baja. Esto se evidencia en la baja correlación entre estos datos, que es apenas de 0.00028, indicando que la edad no es un factor determinante en el rendimiento académico.",
+        "El número de ausencias tiene un impacto negativo significativo en el rendimiento académico. Los estudiantes con más ausencias tienden a tener las peores calificaciones. En el gráfico 'Relación entre ausencias y calificaciones' se observa que los estudiantes con mejores calificaciones son aquellos con menor número de ausencias.",
+    },
+    {
+      pregunta:
+        "¿Qué impacto tiene el nivel de apoyo parental en la calificación final de los estudiantes?",
+      respuesta:
+        "El apoyo parental tiene un impacto notable en el rendimiento académico de los estudiantes. En comparación con los estudiantes que no reciben ningún tipo de apoyo parental, aquellos que reciben un alto nivel de apoyo tienen un promedio de calificaciones un 46% superior.",
+    },
+    {
+      pregunta:
+        "¿Los estudiantes que reciben tutorías tienden a tener mejores calificaciones?",
+      respuesta:
+        "Sí, los estudiantes que reciben tutorías tienden a obtener mejores calificaciones. De hecho, el promedio de notas de estos estudiantes es un 15% superior en comparación con aquellos que no reciben tutorías.",
+    },
+    {
+      pregunta:
+        "¿Existe una relación entre el tiempo de estudio semanal y la calificación final del estudiante?",
+      respuesta:
+        "Existe una pequeña correlación positiva entre el tiempo de estudio semanal y las calificaciones, lo que indica que un mayor tiempo de estudio puede influir en un mejor rendimiento académico. Sin embargo, esta no es una de las variables que más impactan las calificaciones de los estudiantes.",
+    },
+    {
+      pregunta:
+        "¿Hay patrones específicos en los estudiantes que obtienen una calificación 'A' comparados con aquellos que obtienen una calificación 'F'?",
+      respuesta:
+        "El análisis sugiere que los factores que más afectan el rendimiento académico son la asistencia a clases, el tiempo de estudio semanal y el apoyo parental. Los estudiantes que obtienen calificaciones 'A' tienden a asistir regularmente a clases, estudiar consistentemente y recibir apoyo parental, en contraste con aquellos que obtienen calificaciones 'F'.",
+    },
+    {
+      pregunta:
+        "¿Qué tipo de actividades extracurriculares (deportes, música, voluntariado) tienen una mayor influencia en el rendimiento académico?",
+      respuesta:
+        "Según el gráfico 'Rendimiento de estudiantes según participación en actividades extracurriculares', la combinación de participar en música y voluntariado es la que tiene la mayor influencia positiva en el rendimiento académico, con un promedio de calificaciones un 22% superior en comparación con los estudiantes que no participan en ninguna actividad.",
+    },
+    {
+      pregunta:
+        "¿La participación en actividades extracurriculares está asociada con un mejor rendimiento académico?",
+      respuesta:
+        "La participación en actividades extracurriculares está ligeramente asociada con un mejor rendimiento académico. Los estudiantes que participan en alguna actividad extracurricular tienen, en promedio, un 9% mejor rendimiento en sus calificaciones.",
     },
     {
       pregunta:
@@ -128,48 +165,12 @@ export const ADD1 = {
     },
     {
       pregunta:
-        "¿Cuál es la correlación entre el tiempo de estudio semanal y la clasificación de las notas?",
+        "¿Existe una relación entre la edad de los estudiantes y su rendimiento académico?",
       respuesta:
-        "Existe una pequeña correlación positiva entre el tiempo de estudio semanal y las calificaciones, lo que indica que un mayor tiempo de estudio puede influir en un mejor rendimiento académico. Sin embargo, esta no es una de las variables que más impactan las calificaciones de los estudiantes.",
-    },
-    {
-      pregunta:
-        "¿Los estudiantes que reciben tutorías tienden a tener mejores clasificaciones de notas?",
-      respuesta:
-        "Sí, los estudiantes que reciben tutorías tienden a obtener mejores calificaciones. De hecho, el promedio de notas de estos estudiantes es un 15% superior en comparación con aquellos que no reciben tutorías.",
-    },
-    {
-      pregunta:
-        "¿Cómo impacta el número de ausencias en el rendimiento académico de los estudiantes?",
-      respuesta:
-        "El número de ausencias tiene un impacto negativo significativo en el rendimiento académico. Los estudiantes con más ausencias tienden a tener las peores calificaciones. En el gráfico 'Relación entre ausencias y calificaciones' se observa que los estudiantes con mejores calificaciones son aquellos con menor número de ausencias.",
-    },
-    {
-      pregunta:
-        "¿Qué impacto tiene el nivel de apoyo parental en la clasificación de las notas de los estudiantes?",
-      respuesta:
-        "El apoyo parental tiene un impacto notable en el rendimiento académico de los estudiantes. En comparación con los estudiantes que no reciben ningún tipo de apoyo parental, aquellos que reciben un alto nivel de apoyo tienen un promedio de calificaciones un 46% superior.",
-    },
-    {
-      pregunta:
-        "¿La participación en actividades extracurriculares está asociada con un mejor rendimiento académico?",
-      respuesta:
-        "La participación en actividades extracurriculares está ligeramente asociada con un mejor rendimiento académico. Los estudiantes que participan en alguna actividad extracurricular tienen, en promedio, un 9% mejor rendimiento en sus calificaciones.",
-    },
-    {
-      pregunta:
-        "¿Qué tipo de actividades extracurriculares (deportes, música, voluntariado) tienen una mayor influencia en el rendimiento académico?",
-      respuesta:
-        "Según el gráfico 'Rendimiento de estudiantes según participación en actividades extracurriculares', la combinación de participar en música y voluntariado es la que tiene la mayor influencia positiva en el rendimiento académico, con un promedio de calificaciones un 22% superior en comparación con los estudiantes que no participan en ninguna actividad.",
-    },
-    {
-      pregunta:
-        "¿Hay patrones específicos en los estudiantes que obtienen una calificación 'A' comparados con aquellos que obtienen una calificación 'F'?",
-      respuesta:
-        "El análisis sugiere que los factores que más afectan el rendimiento académico son la asistencia a clases, el tiempo de estudio semanal y el apoyo parental. Los estudiantes que obtienen calificaciones 'A' tienden a asistir regularmente a clases, estudiar consistentemente y recibir apoyo parental, en contraste con aquellos que obtienen calificaciones 'F'.",
+        "La relación entre la edad de los estudiantes y su rendimiento académico es muy baja. Esto se evidencia en la baja correlación entre estos datos, que es apenas de 0.00028, indicando que la edad no es un factor determinante en el rendimiento académico.",
     },
   ],
-  "creditos:": [
+  creditos: [
     {
       Dataset: {
         Autor: "RABIE EL KHAROUA",

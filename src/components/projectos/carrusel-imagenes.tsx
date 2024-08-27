@@ -19,6 +19,7 @@ function CarruselImagenes(props: PropType) {
     <div>
       <motion.div className="flex flex-col gap-8 items-center" layoutId="">
         <h1 className="font-PlaywriteDKUloopet text-4xl">Imágenes</h1>
+        <h1 className="text-lg">{info.textoImagen}</h1>
         <div className="w-3/5">
           <AnimatePresence>
             <motion.div className="flex w-full" layoutId={selectedId}>

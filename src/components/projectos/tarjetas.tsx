@@ -29,7 +29,7 @@ export default function Tarjeta(props: PropType) {
       >
         <CardHeader className="flex flex-col gap-6">
           <h1 className="text-xl font-semibold">{element.nombre}</h1>
-          <h1 className="text-base italic">{element.resumen}</h1>
+          <h1 className="text-base italic line-clamp-6">{element.resumen}</h1>
         </CardHeader>
         <CardBody></CardBody>
         <CardFooter className="flex flex-col w-full">

@@ -6,6 +6,7 @@ export interface Aplicacion {
   resumen: string;
   desc: string;
   imagenPrincipalURL: string;
+  textoImagen: string;
   imagenesExtra: Array<string>;
   tecnologias: Array<string>;
 }
@@ -21,6 +22,7 @@ export const ProyectoAppNoEncontrado: Aplicacion = {
   resumen: "",
   desc: "",
   imagenPrincipalURL: "",
+  textoImagen: "",
   imagenesExtra: [],
   tecnologias: [],
 };
