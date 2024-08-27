@@ -1,7 +1,6 @@
 import { Analisis } from "@/data/proyectos/analisis/analisis";
 import { Aplicacion } from "@/data/proyectos/apps/apps";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
 import { motion } from "framer-motion";
 
@@ -32,9 +31,7 @@ export default function Tarjeta(props: PropType) {
           <h1 className="text-xl font-semibold">{element.nombre}</h1>
           <h1 className="text-base italic">{element.resumen}</h1>
         </CardHeader>
-        <CardBody>
-          <Image radius="md" width={300} src={element.imagenURL}></Image>
-        </CardBody>
+        <CardBody></CardBody>
         <CardFooter className="flex flex-col w-full">
           <Link href={`/projects/${tipo}-${element.id}`}>
             <h1>Ver más</h1>

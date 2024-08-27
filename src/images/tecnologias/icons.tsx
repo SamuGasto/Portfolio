@@ -1,4 +1,4 @@
-import {Image} from "@nextui-org/image";
+import { Image } from "@nextui-org/image";
 import blender from "./images/blender.svg";
 import css from "./images/css.svg";
 import csharp from "./images/csharp.svg";
@@ -14,9 +14,7 @@ import sqlite from "./images/sqlite.svg";
 import unity from "./images/Unity_dark.svg";
 import ue5 from "./images/Unreal_Engine_dark.svg";
 
-
 const width = 40;
-
 
 export const Iconos = [
   () => <Image radius="none" width={width} src={css} />,
@@ -32,5 +30,5 @@ export const Iconos = [
   () => <Image radius="none" width={width} src={csharp} />,
   () => <Image radius="none" width={width} src={unity} />,
   () => <Image radius="none" width={width} src={ue5} />,
-  () => <Image radius="none" width={width} src={blender} />
+  () => <Image radius="none" width={width} src={blender} />,
 ];

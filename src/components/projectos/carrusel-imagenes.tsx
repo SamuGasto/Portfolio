@@ -1,11 +1,8 @@
 import { Analisis } from "@/data/proyectos/analisis/analisis";
 import { Aplicacion } from "@/data/proyectos/apps/apps";
-import { AnimatePresence, wrap, motion } from "framer-motion";
-import { title } from "../primitives";
+import { AnimatePresence, motion } from "framer-motion";
 import { Image } from "@nextui-org/image";
 import { useState } from "react";
-import { image } from "@nextui-org/theme";
-import { Button } from "@nextui-org/button";
 
 interface PropType {
   info: Analisis | Aplicacion;
@@ -21,7 +18,7 @@ function CarruselImagenes(props: PropType) {
   return (
     <div>
       <motion.div className="flex flex-col gap-8 items-center" layoutId="">
-        <h1 className={title({ size: "sm" })}>Imágenes</h1>
+        <h1 className="font-PlaywriteDKUloopet text-4xl">Imágenes</h1>
         <div className="w-3/5">
           <AnimatePresence>
             <motion.div className="flex w-full" layoutId={selectedId}>

@@ -1,6 +1,6 @@
 import Experiencia from "@/components/experiencia/experiencia";
 import Presentacion from "@/components/presentacion/presentacion";
-import ListaProyectos from "@/components/projectos/lista-projectos";
+import ListaProyectos from "@/components/projectos/lista-proyectos";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {

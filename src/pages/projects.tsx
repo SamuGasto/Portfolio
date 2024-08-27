@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/default";
-import Proyectos from "@/components/projectos/lista-projectos";
+import Proyectos from "@/components/projectos/lista-proyectos";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import proyectosApp, {

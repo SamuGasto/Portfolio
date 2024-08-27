@@ -68,20 +68,19 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
   );
 };
 
-export const TimeEnd: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-}) => {
+export const Expo: React.FC<IconSvgProps> = ({ size = 24, width, height }) => {
   return (
     <svg
       className="light light:fill-zinc-400 dark:fill-zinc-700"
       xmlns="http://www.w3.org/2000/svg"
       height={size || height}
-      viewBox="0 -960 960 960"
+      viewBox="0 0 256 231"
       width={size || width}
     >
-      <path d="M480-520q66 0 113-47t47-113v-120H320v120q0 66 47 113t113 47ZM160-80v-80h80v-120q0-61 28.5-114.5T348-480q-51-32-79.5-85.5T240-680v-120h-80v-80h640v80h-80v120q0 61-28.5 114.5T612-480q51 32 79.5 85.5T720-280v120h80v80H160Z" />
+      <path
+        d="M121 85c2-3 5-4 7-4 1 0 5 1 7 4 16 22 43 67 63 101l26 40c7 8 18 3 24-6s8-15 8-22c0-4-88-168-97-182-9-13-11-16-26-16h-11c-14 0-16 3-25 16C88 30 0 194 0 198c0 7 2 13 8 22s17 14 24 6l26-40c20-34 47-79 63-101Z"
+        fill="currentColor"
+      />
     </svg>
   );
 };
