@@ -3,9 +3,9 @@ import { Aplicacion } from "@/data/proyectos/apps/apps";
 import { motion } from "framer-motion";
 import SeccionPreguntas from "./seccion-preguntas";
 import SeccionTecnologias from "./seccion-tecnologias";
-import CarruselImagenes from "./carrusel-imagenes";
 import Descripcion from "./descripcion-proyecto";
 import Titulo from "./titulo-proyecto";
+import Imagenes from "./imagenes";
 
 interface PropType {
   info: Analisis | Aplicacion;
@@ -16,7 +16,7 @@ export default function VistaProyecto(props: PropType) {
 
   return (
     <motion.div
-      className="flex flex-col text-center justify-center gap-10 py-4 md:py-8"
+      className="flex flex-col w-full text-center justify-center gap-10 py-4 md:py-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
     >
@@ -24,7 +24,7 @@ export default function VistaProyecto(props: PropType) {
       <hr />
       {Descripcion(info)}
       <hr />
-      <CarruselImagenes info={info} />
+      <Imagenes info={info} />
       <hr />
       <section className="w-5/6 md:w-4/6 lg:w-5/6 self-center">
         {esAnalisis(info) ? (

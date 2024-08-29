@@ -47,12 +47,9 @@ export default function AboutPage() {
             >
               Mi experiencia como Asistente DTI en la Universidad de O’Higgins
               me ha permitido aplicar y expandir mis conocimientos técnicos en
-              un entorno real, manejando desde la optimización de
-              infraestructuras tecnológicas hasta la implementación de
-              soluciones de software a medida. Además, mi trabajo como ayudante
-              docente en programación Python ha fortalecido mi capacidad para
-              desglosar problemas complejos y enseñar conceptos técnicos con
-              claridad.
+              un entorno real. Además, mi trabajo como ayudante docente en
+              programación Python ha fortalecido mi capacidad para desglosar
+              problemas complejos y enseñar conceptos técnicos con claridad.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
