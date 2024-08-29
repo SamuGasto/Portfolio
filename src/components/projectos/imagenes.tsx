@@ -1,8 +1,5 @@
 import { Analisis } from "@/data/proyectos/analisis/analisis";
 import { Aplicacion } from "@/data/proyectos/apps/apps";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import { useState } from "react";
